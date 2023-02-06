@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Web 2023">
+  <meta name="keywords" content="HTML, etiquetas, Angular, Typescript, CSS">
+  <meta name="author" content="Camila Hess">
+  <title>Formularios</title>
+
+</head>
+
+<body>
+  <h1>Formularios con JavaScript</h1>
+  <form action="pagina2.html" method="GET">
+    <p><label for="nombre">Nombre:</label></p>
+    <input type="text" name="nombre" id="nombre" size="80" required>
+    <p><label for="apellidos">Apellidos:</label></p>
+    <input type="text" name="apellidos" id="apellidos" size="80"  placeholder="apellido">
+    <p><label for="email">Correo electrónico:</label></p>
+    <input type="text" id="email" name="email">
+    <p><label>Password:</label></p>
+    <input type="password" name="password" size="12" minlength="6" maxlength="12">
+    <p><label>Edad:</label>
+    <input type="number" name="number" min="0" max="120" step="2" value="25"></p> 
+    <p><label>Fecha y hora local:</label>
+    <input type="datetime-local" name="datetimelocal"></p>
+    <p><label> Fecha de Nacimiento: </label> 
+    <input type="date" name="fechaNac" max="2023-01-27" required></p>
+
+    <p><label for="sexo">Sexo:</label></p>
+    <input type="radio" id="hombre" name="sexo" value="hombre">
+    <label for="hombre">Hombre</label>
+    <input type="radio" id="mujer" name="sexo" value="mujer">
+    <label for="mujer">Mujer</label><br><br>
+    <p><label>Fotos de perfil</label>
+    <input type="file" name="file" accept="image/*" multiple></p>
+
+    <p><input type="checkbox" id="informacion" name="informacion" checked>
+    <label for="informacion">Deseo recibir información sobre novedades y ofertas</label></p>
+    <p><input type="checkbox" id="condiciones" name="condiciones">
+    <label for="condiciones">Declaro haber leido y aceptar las condiciones generales del programa y la normativa
+        sobre protección de datos</label></p>
+        <p>
+          <input type="submit" name="submit" value="ENVIAR">
+          <input type="reset" name="reset" value="BORRAR">
+          <input type="button" name="button" value="BUTTON">
+        </p>
+  </form>
+
+</body>
+
+
+
+</html>
