@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Web 2023">
+  <meta name="keywords" content="HTML, etiquetas, Angular, Typescript, CSS">
+  <meta name="author" content="Camila Hess">
+  <title>Formularios</title>
+
+</head>
+<body>
+    <form id="datos" method="get">
+    <p><label for="nombre">Nombre</label></p>
+        <input type="text" name="nombre" id="nombre"  size="50" minlength="5" maxlength="50" required>
+      
+      <p><label for="descripcion">Descripción:</label></p>
+        <textarea id="descripcion" rows="5" placeholder="Empiece aqui..."></textarea>
+        <!--No dejar nunca espacios entre la apertura y cierre del textarea-->
+      
+      <p><label for="imagen"> Seleccionar imagen: </label></p>
+      <input type="file" name="imagen" accept="image/*" multiple id="imagen">
+      <p><input type="checkbox" id="contador" name="contador">
+      <label for="informacion">Añadir contador de visitas</label></p>
+      <label for="precio">Precio (€): <input type="number" name="precio" id="precio" min="5" max="50" required></label>
+      <br><br>
+      <label for="impuestos">Impuestos: 
+          <select id="impuestos" name="impuestos">
+              <option value="4">4%</option>
+              <option value="7">7%</option>
+              <option value="16">16%</option>
+              <option value="25">25%</option>
+          </select>
+      </label>
+     
+      <p>Promoción:
+          <input type="radio" id="ninguno" name="promocion" value="ninguno">
+          <label for="ninguno">Ninguno</label>
+          <input type="radio" id="transporte" name="promocion" value="transporte gratuito">
+          <label for="transporte">Transporte gratuito</label>
+          <input type="radio" id="descuento" name="promocion" value="descuento 5%">
+          <label for="descuento">Descuento 5%</label>
+        </p>
+
+
+  </form>
+  
+  
+  
+    </form>
+</body>
+</html>
