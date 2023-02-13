@@ -1,3 +1,14 @@
+/*Solicita 2 números al usuario y debes devolver lo
+siguiente:
+Cantidad de pares
+Cantidad de Impares
+Cantidad de positivos
+Cantidad de negativos
+Muestra todos los números que hay entre uno y otro,
+contando ambos.
+Devuelve la suma de todos
+Devuelve el factorial del mayor de los números*/
+
 function pedirNumero(texto, texto2) {
     let numero;
     do {
