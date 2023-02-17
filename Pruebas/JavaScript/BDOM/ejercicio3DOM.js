@@ -40,7 +40,7 @@ window.onload = function(){
     parrafo1=cuerpo.children[0].children[0];
     console.log(parrafo1.nodeName + " " + parrafo1.innerHTML);
 
-    //6.
+    
     
 
 
