@@ -7,7 +7,7 @@ function reemplazarCadena(cad1, cad2, cad3) {
     let contador = 0;
     let nuevaCad = "";
     let posInicio = 0;
-  
+    
     while (cad1.indexOf(cad2, posInicio) !== -1) {
       // Encontrar la posición de la primera aparición de cad2 en cad1, empezando en pos
       let index = cad1.indexOf(cad2, posInicio); //devuelve -1 si no lo encuentra en ninguna posicion
@@ -23,4 +23,4 @@ function reemplazarCadena(cad1, cad2, cad3) {
     alert("Se ha reemplazado " + contador + " veces.\n" + "La cadena resultante es: " + nuevaCad);
   }
 
-  reemplazarCadena("hojaaaa","a","aldre");
+  reemplazarCadena("holaaaa","a","x");
