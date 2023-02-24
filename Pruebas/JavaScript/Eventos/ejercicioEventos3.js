@@ -11,12 +11,20 @@
 	5) Si sale el ratón del TD vuelve a su borde normal
 
 */	
-
+function pedirCosas(texto){
+    let num;
+    do{
+        num=+prompt(texto); //el + es para convertirlo a número
+    } while (isNaN(num) || num<1);
+    return num;
+}
 
 window.onload = function() {
-    let numFilas = prompt("Introduce el número de filas:");
-    let numColumnas = prompt("Introduce el número de columnas:");
-  
+
+    let numFilas = pedirCosas("Introduce el número de filas:");
+    let numColumnas = pedirCosas("Introduce el número de columnas:");
+
+
     // Crear la tabla
     let tabla = document.createElement("table");
     tabla.style.border = "2px solid green";
